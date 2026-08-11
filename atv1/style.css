@@ -1,0 +1,28 @@
+.body {
+    background-image: url("assets/image.gif");
+    padding: 40px;
+}
+.p {
+    color: aliceblue; 
+    font-size: x-large;
+}
+
+.b {
+    color: #8d8dff; 
+    font-weight: 700; 
+    font-size: x-large;
+}
+
+.fofin { 
+    max-width: 750px;
+    height: 250px;
+    background-image: url("assets/beetledance.gif");
+    background-repeat: repeat-x;
+}
+
+.linha-horizontal {
+    width: 100%;
+    height: 50px;
+    background-image: url("assets/rainbow-warp.gif");
+    background-repeat: repeat-x;
+} 
