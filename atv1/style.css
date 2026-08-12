@@ -1,28 +1,85 @@
+@import url(styles/header.css);
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+/* "Space Grotesk", sans-serif; */
+
+
+:root{
+    --font-space: "Space Grotesk", sans-serif;
+    --color-secundary: #8d8dff;
+    --color-paragraph: aliceblue;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-space);
+}
+
 .body {
     background-image: url("assets/image.gif");
-    padding: 40px;
-}
-.p {
-    color: aliceblue; 
-    font-size: x-large;
+    border: ridge 0.3rem var(--color-secundary);
+    border-radius: 20px;
+    margin: 20px;
 }
 
-.b {
-    color: #8d8dff; 
+.container {
+    padding: 0 3.75rem;
+}
+
+.container-gato{
+    display: flex;
+    justify-content: space-between;
+}
+
+.h3 {
+    color: var(--color-secundary); 
     font-weight: 700; 
-    font-size: x-large;
+    font-size: 2.5rem;
 }
 
-.fofin { 
-    max-width: 750px;
-    height: 250px;
-    background-image: url("assets/beetledance.gif");
-    background-repeat: repeat-x;
+.p {
+    color: var(--color-paragraph);
+    font-size: 1.7rem;
+}
+
+.besouro { 
+    max-width: 45rem;
+    height: 14.3rem;
+    background: url("assets/beetledance.gif"); /* repeat-x; não precisa fazer separado, usando apenas background da pra fazer os 2 */
+    margin: 1.25rem;
+}
+
+.gato {
+    margin-top: 50px; 
+    width: 12rem;
+}
+
+.gato-inv {
+    margin: 1rem 0 0 0;
+    transform: scaleX(-1);
+    margin-top: 10.9rem; 
+    width: 12rem;
+    height: 100%;
+}
+
+.obj {
+    margin-bottom: 3.75rem;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.dd {
+    color: rgb(187, 186, 186);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .linha-horizontal {
     width: 100%;
-    height: 50px;
+    height: 3.1rem;
     background-image: url("assets/rainbow-warp.gif");
     background-repeat: repeat-x;
 } 

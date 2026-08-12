@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Semântico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="corpo">
+    <header class="cabecalho">
+        <h1>Header(Cabeçalho)</h1>
+    </header>
+    <section class="sessao">
+        <nav class="titulo-nav">
+            <div class="nav-links">
+                <a href="" class="links">Início</a>
+                <a href="" class="links">Meio</a>
+                <a href="#final" class="links">Fim</a>
+            </div>
+            <h1 class="texto">Nav (Menu de Navegação)</h1>
+        </nav>
+        <section class="sessao-semantica">
+            <div class="articles-div">
+                <article class="article-div">
+                    <h1 class="title-article">Article 1</h1>
+                    <p class="article-text">
+                        <em>Esse texto esta em itálico com ênfase semântica</em>. <sub>Aqui estamos separando o texto com sublinhação</sub>. <b>Essa tag deixa o texto em negrito de forma apenas visual.</b>
+                    </p>
+                </article>
+                <article class="article-div">
+                    <h1 class="title-article"> Article 2</h1>
+                    <p class="article-text"><strong>Para deixar o texto mais destacado usamos a tag strong</strong>. <small>Para deixar o texto pequeno usamos a tag small</small>. <i>E em itálico usamos a tag i, mas para termos técnicos, pensamentos e expressões em outro idioma.</i></p>
+                </article>
+            </div>
+            <div class="articles-div">
+                <time datetime="2026-06-08T14:30:00">08 de Junho ás 14:30</time>
+                <figure class="figura">
+                    <img src="lavandario.png" alt="Imagem de Lavandario" class="imagem">
+                    <figcaption>Imagem Térrea do Lavandário da Colônia Witmarsum</figcaption>
+                </figure>
+                <h1>Lorem <mark>ipsum dolor,</mark> sit amet consectetur adipisicing elit.</h1>
+            </div>
+        </section>
+        <aside class="anuncios">
+            <h1 class="texto-vert">Aside (anuncios, links secundários, etc...)</h1>
+        </aside>
+    </section>
+    <footer id="final" class="rodape">
+        <h1>Footer (rodapé)</h1>
+        <address>teste@testando.com</address>
+    </footer>
+</body>
+</html>

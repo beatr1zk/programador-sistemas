@@ -6,31 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/header.css">
 </head>
 
-<body class="body">
-    <div class="header">
-        <h1 style="color: #6161fc;">˖ ࣪⊹ Beatriz Kava ˖ ࣪⊹</h1>
-        <p class="p"> Olá! prazer, me chamo Beatriz, tenho 18 anos e sou estudante de Design Gráfico na UNINTER! Estou
-            na terceira fase da minha graduação,e busco me especializar futuramente em UI/UX e marketing digital ≽^•⩊•^≼ </p>
+<body class="body borda">
+    <header class="cabecalho">
+        <h1 class="cabecalho-titulo" id="home">˖ ࣪⊹ Beatriz Kava ˖ ࣪⊹</h1>
+        <nav>
+            <ul class="cabecalho-lista">
+                <li><a href="#home" class="cabecalho-link">Home</a></li>
+                <li><a href="#quem" class="cabecalho-link">Quem eu sou?</a></li>
+                <li><a href="#coisas" class="cabecalho-link">Coisas que eu gosto</a></li>
+                <li><a href="#trabalho" class="cabecalho-link">Trabalho</a></li>
+                <li><a href="#objetivos" class="cabecalho-link">Objetivos</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <div class="fofin"></div>
-        
-            <p class="p">Escolhi Design Gráfico porque acho a área muito interessante. Gosto de entender as decisões por trás das marcas, 
-            como o uso das cores influencia a percepção do cliente, como a teoria das cores funciona na prática entre muitas outras 
+
+    <div class="linha-horizontal"></div>
+
+
+    <div class="container">
+        <h3 class="h3" id="quem">𖹭 Quem sou eu?</h3>
+
+        <p class="p"> Olá! prazer, me chamo Beatriz, tenho 18 anos e sou estudante de Design Gráfico na UNINTER! Estou
+            na terceira fase da minha graduação,e busco me especializar futuramente em UI/UX e marketing digital ≽^•⩊•^≼
+        </p>
+
+        <div class="besouro"></div>
+
+        <p class="p">Escolhi Design Gráfico porque acho a área muito interessante. Gosto de entender as decisões por
+            trás das marcas,
+            como o uso das cores influencia a percepção do cliente, como a teoria das cores funciona na prática entre
+            muitas outras
             áreas que o Design abrange. ≽^• ˕ • ྀི≼ </p>
 
-            <img src="assets/whitecat-walk.gif" alt="cat">
+        <img src="assets/whitecat-walk.gif" alt="gato" class="gato">
     </div>
 
-   <div class="linha-horizontal"></div>
+    <div class="linha-horizontal"></div>
 
-    <ul>
-        <b class="b">𖹭 Coisas que eu gosto</b>
-        <li class="p">Gatos</li>
-        <li class="p">Desenho</li>
-        <li class="p">Tecnologia</li>
-    </ul>
+    <div class="container container-gato" id="coisas">
+        <ul style="margin-bottom: 60px;">
+            <h3 class="h3">𖹭 Coisas que eu gosto</h3>
+            <li class="p">Gatos</li>
+            <li class="p">Desenho</li>
+            <li class="p">Tecnologia</li>
+        </ul>
+        <img src="assets/whitecat-walk.gif" alt="gato" class="gato-inv">
+    </div>
+
+    <div class="linha-horizontal"></div>
+
+    <div class="container">
+        <h3 class="h3">𖹭 Meus Objetivos:</h3>
+
+        <p class="p obj">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis mollitia molestiae, minima
+            adipisci cupiditate perspiciatis
+            quasi laudantium rerum inventore, perferendis magni, repellendus in! Deserunt consequatur pariatur magnam
+            aliquam nemo minima? </p>
+    </div>
+
+    <div class="linha-horizontal"></div>
+
+    <div class="container-footer">
+        <footer class="container dd">
+            <dd>© Todos os direitos reservados a de fato, não o Heron</dd>
+        </footer>
+    </div>
+
 </body>
 
 </html>

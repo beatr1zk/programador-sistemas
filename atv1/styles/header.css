@@ -1,0 +1,25 @@
+@import url(style.css);
+
+.cabecalho {
+    font-family: var(--font-space);
+    display: flex;
+}
+
+.cabecalho-titulo {
+    color: #6060ff;
+    font-size: 4rem;
+    margin-left: 2rem;
+}
+
+.cabecalho-lista {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.cabecalho-link {
+    color: var(--color-paragraph);
+    text-decoration: none;
+}
