@@ -29,6 +29,7 @@
 .container-gato{
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .h3 {
@@ -57,7 +58,7 @@
 .gato-inv {
     margin: 1rem 0 0 0;
     transform: scaleX(-1);
-    margin-top: 10.9rem; 
+
     width: 12rem;
     height: 100%;
 }

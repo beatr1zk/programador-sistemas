@@ -1,6 +1,13 @@
 @import url(style.css);
 
+.nav {
+    position: absolute;
+    left: 40%;
+    margin-top: 2rem;
+}
+
 .cabecalho {
+    position: relative;
     font-family: var(--font-space);
     display: flex;
 }
@@ -14,12 +21,19 @@
 .cabecalho-lista {
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 6rem;
     justify-content: center;
     text-align: center;
 }
 
 .cabecalho-link {
     color: var(--color-paragraph);
+    font-size: 1.15rem;
     text-decoration: none;
+    border-bottom: 2px dotted transparent;
+    transition: 0.4s ease;
+}
+
+.cabecalho-link:hover {
+    border-bottom: 2px dotted #f7f7f8;
 }
