@@ -22,17 +22,17 @@
 **INSTALAÇÃO**
 
 **Como instalar o ambiente virtual?**
-1º - python -m pip install virtualenv 
+1º - python -m pip install virtualenv (*instala o venv*)
 2º - python -m virtualenv --version (*verificar instalação*)
-3º - python -m venv venv (*apenas se der erro: passo 4º*)
-4º - Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass 
-5º - venv .\venv\Scripts\Activate.ps1
+3º - python -m venv venv                   **ESSE**
+4º - Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass (*Caso der erro no 3º*)
+5º - venv .\venv\Scripts\Activate.ps1      **ESSE**
 
 Para parar de executar: deactivate
 
 
 **Como instalar Django?**
-1º - pip install django
+1º - pip install django         **ESSE**
 2º - pip freeze (*lista o que está instalado no ambiente virtual*)
 3º - pip freeze > requirements.txt (*cria um arquivo chamado requirements.txt contendo todas as bibliotecas instaladas no AV*)
 
@@ -49,7 +49,7 @@ Para listar os comandos do django utilize: *django-admin help*, os mais utilizad
 - startproject (cria um novo projeto Django com sua estrutura inicial de arquivos.)
 
 **Como utilizar o Django?**
-1º - django-admin startproject setup . (*cria o setup do django*)
-2º - python manage.py runserver (*inicializa o server e disponibiliza a URL*)
+1º - django-admin startproject setup . (*cria o setup do django*)                    **ESSE**
+2º - python manage.py runserver (*inicializa o server e disponibiliza a URL*)        **ESSE**
 
 *--------------------------------------------------------------------------------------------------------------------------*
