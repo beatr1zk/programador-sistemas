@@ -6,24 +6,17 @@ class Restaurante:
         self.localizacao = localizacao
         self.tipo_comida = tipo_comida
         self.qntd_funcionarios = qntd_funcionarios
-        self._status = False
+        self.status = False
 
         Restaurante.restaurantes.append(self)
 
     def __str__(self):
-        return f"Nome: {self.nome_restaurante} \nRua: {self.localizacao} \nTipo de comida: {self.tipo_comida} \nQuantidade de funcionários: {self.qntd_funcionarios} \nStatus: {self.ativo}"
+        return f"Nome: {self.nome_restaurante} \nRua: {self.localizacao} \nTipo de comida: {self.tipo_comida} \nQuantidade de funcionários: {self.qntd_funcionarios} \nStatus: {self.status}"
 
-    @classmethod
-    def listar_restaurantes(cls):
-        for restaurante in cls.restaurantes:
-            print(f"\nNome: {restaurante.nome_restaurante} \n| Rua: {restaurante.localizacao} \n| Tipo de Comida: {restaurante.tipo_comida} \n| Quantidade de Funcionários: {str(restaurante.qntd_funcionarios)} \n| Status: {restaurante.ativo} \n\n---------------------------------------------------")
-
-    @property
-    def ativo(self):
-        return 'Ativo' if self._status else 'Inativo'
-
-    def alterar_status(self):
-        self._status = not self._status
+    def listar_restaurantes():
+        for restaurante in Restaurante.restaurantes:
+            print(f"\nNome: {restaurante.nome_restaurante} \n|Rua: {restaurante.localizacao} \n|Tipo de Comida: {restaurante.tipo_comida} \n|Quantidade de Funcionários: {str(restaurante.qntd_funcionarios)} \n|Status: {restaurante.status} \n\n---------------------------------------------------")
+ 
 
 la_mafia = Restaurante(
     "La Mafia",
@@ -52,8 +45,6 @@ barolo = Restaurante(
     "Italiana",
     25
 )
-
-Restaurante.alterar_status(barolo)
 
 Restaurante.listar_restaurantes()
 

@@ -6,7 +6,7 @@ Por exemplo, em um sistema de uma loja, podemos ter um objeto **Produto**, que p
 
 A POO ajuda a deixar o código mais **organizado, reutilizável e fácil de manter**, principalmente em sistemas maiores.
 
-**----------------------------------------------------------------------------------------------------------------------------------------------------------------**
+**-------------------------------------------------------------------------------------------------------------------------------------**
 
 # O que são Classes?
 
@@ -19,7 +19,7 @@ A partir dessa classe, podemos criar vários objetos diferentes. Cada objeto ter
 
 Dessa forma, as classes permitem *organizar, reutilizar e facilitar a manutenção do código*, sendo um dos principais conceitos da Programação Orientada a Objetos.
 
-**----------------------------------------------------------------------------------------------------------------------------------------------------------------**
+**-------------------------------------------------------------------------------------------------------------------------------------**
 
 # O que é o __init__ e o self?
 
@@ -28,7 +28,7 @@ Dessa forma, as classes permitem *organizar, reutilizar e facilitar a manutenç�
 
 Uma classe SEMPRE deve começar comletra maiúscula
 
-**----------------------------------------------------------------------------------------------------------------------------------------------------------------**
+**-------------------------------------------------------------------------------------------------------------------------------------**
 
 # Esta é a forma mais tosca de utilizar: (exemplo 01)
 
@@ -46,7 +46,7 @@ pessoa = [pessoa1, pessoa2]
 print(f"{pessoa1.nome} tem {pessoa1.idade} anos")
 print(f"{pessoa2.nome} tem {pessoa2.idade} anos")
 
-**----------------------------------------------------------------------------------------------------------------------------------------------------------------**
+**-------------------------------------------------------------------------------------------------------------------------------------**
 
 # O que é a função __str__? (exemplo 02)
 
@@ -78,9 +78,9 @@ print(pessoa2)
 
 retorno do print: Olá, eu sou Amanda, tenho 18 anos
 
-**----------------------------------------------------------------------------------------------------------------------------------------------------------------**
+**-------------------------------------------------------------------------------------------------------------------------------------**
 
-# O que é a função listar?
+# O que é a função listar? (exemplo 03)
 
 Podemos criar uma função de lista para que toda vez que chamemos essa classe listar_pessoas(), assim, toda vez que executamos a classe ela puxa o for i in range para executar
 
@@ -112,6 +112,6 @@ pessoa2 = Pessoa("Any", "15")
 
 Pessoa.listar_pessoas()
 
-**----------------------------------------------------------------------------------------------------------------------------------------------------------------**
+**-------------------------------------------------------------------------------------------------------------------------------------**
 
-# Momento atividade, criação de um modelo do 0
+# Momento atividade, criação de um modelo do 0, atividades 1 e 2

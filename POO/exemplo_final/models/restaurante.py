@@ -1,5 +1,8 @@
+from models.avaliacoes import Avaliacoes
+
 class Restaurante:
     restaurantes = []
+    avaliacoes = []
 
     def __init__(self, nome_restaurante, localizacao, tipo_comida, qntd_funcionarios):
         self.nome_restaurante = nome_restaurante
@@ -7,6 +10,7 @@ class Restaurante:
         self.tipo_comida = tipo_comida
         self.qntd_funcionarios = qntd_funcionarios
         self._status = False
+        self._avaliacoes = []
 
         Restaurante.restaurantes.append(self)
 
@@ -16,44 +20,22 @@ class Restaurante:
     @classmethod
     def listar_restaurantes(cls):
         for restaurante in cls.restaurantes:
-            print(f"\nNome: {restaurante.nome_restaurante} \n| Rua: {restaurante.localizacao} \n| Tipo de Comida: {restaurante.tipo_comida} \n| Quantidade de Funcionários: {str(restaurante.qntd_funcionarios)} \n| Status: {restaurante.ativo} \n\n---------------------------------------------------")
+            print(f"\nNome: {restaurante.nome_restaurante} \n| Rua: {restaurante.localizacao} \n| Tipo de Comida: {restaurante.tipo_comida} \n| Quantidade de Funcionários: {str(restaurante.qntd_funcionarios)} \n| Avaliações: {restaurante.media_avaliacoes} \n| Status: {restaurante.ativo} \n\n---------------------------------------------------")
 
     @property
     def ativo(self):
         return 'Ativo' if self._status else 'Inativo'
 
+    @property
+    def media_avaliacoes(self):
+        if not self._avaliacoes:
+            return 0
+        notas_somadas = sum(avaliacao._nota for avaliacao in self._avaliacoes)
+        quantidade_avaliacoes = len(self._avaliacoes)
+
     def alterar_status(self):
         self._status = not self._status
 
-la_mafia = Restaurante(
-    "La Mafia",
-    "Rua Desembargador Motta, Nº 2601",
-    "Italiana",
-    7
-)
-
-coco_bambu = Restaurante(
-    "Coco Bambu",
-    "Rua Comendador Araújo, Nº 731",
-    "Frutos do mar",
-    170
-)
-
-nomu = Restaurante(
-    "Nômade",
-    "Rua Paulo Gorski, 1095",
-    "Contemporânea",
-    15
-)
-
-barolo = Restaurante(
-    "Barolo",
-    "Alameda Dom Pedro II, 144",
-    "Italiana",
-    25
-)
-
-Restaurante.alterar_status(barolo)
-
-Restaurante.listar_restaurantes()
-
+    def receber_avaliacoes(self, cliente, nota):
+        avaliacao = Avaliacoes(cliente, nota)
+        self._avaliacoes.append(avaliacao)

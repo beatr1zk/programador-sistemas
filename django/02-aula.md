@@ -7,6 +7,8 @@ Criei um repositório separado para executar os comandos, o nome é: projeto-sto
 - Configurar idioma e fuso horário do projeto
 - Organizar rotas (urls.py) de forma profissional, isolando cada app
 
+*--------------------------------------------------------------------------------------------------------------------------*
+
 **Sequencia de comandos:**
 - python -m venv venv
 - .\venv\Scripts\Activate.ps1  
