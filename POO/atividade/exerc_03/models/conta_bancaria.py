@@ -23,7 +23,31 @@ class ContaBancaria:
         if valor <= self._saldo:
             self._saldo -= valor
         else:
-            print(f"Saldo insuficiente para realizar o saque de R$ {valor:.2f}")
+            print(f"\nSaldo insuficiente para realizar o saque de R$ {valor:.2f}")
+
+    def menu(conta):
+        if conta:
+            print("\nQual operação deseja realizar? \n1 - Consultar saldo \n2 - Depositar \n3 - Sacar")
+
+            opcao = int(input("\nEscolha uma opção: "))
+    
+            match opcao:
+                case 1:
+                    print(f"\n{conta}\n")
+    
+                case 2:
+                    valor = float(input("\nDigite o valor do depósito: "))
+                    conta.depositar(valor)
+                    print(f"\nNovo saldo: R$ {conta.saldo:.2f}\n")
+    
+                case 3:
+                    valor = float(input("\nDigite o valor do saque: "))
+                    conta.sacar(valor)
+                    print(f"\nSaque no valor de R$ {valor:.2f} realizado com sucesso!\n"
+                          f"\nSaldo atualizado: R$ {conta.saldo:.2f}")
+    
+                case _:
+                    print("\nOpção inválida")
 
     @property
     def saldo(self):
