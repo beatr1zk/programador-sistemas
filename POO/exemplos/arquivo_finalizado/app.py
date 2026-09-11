@@ -1,4 +1,4 @@
-from models.restaurante import Restaurante
+from POO.exemplos.arquivo_finalizado.models.restaurante import Restaurante
 
 la_mafia = Restaurante(
     "La Mafia",

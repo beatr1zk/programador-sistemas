@@ -1,4 +1,4 @@
-from models.avaliacoes import Avaliacoes
+from POO.exemplos.arquivo_finalizado.models.avaliacoes import Avaliacoes
 
 class Restaurante:
     restaurantes = []
