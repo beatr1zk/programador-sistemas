@@ -32,6 +32,8 @@ class Restaurante:
             return 0
         notas_somadas = sum(avaliacao._nota for avaliacao in self._avaliacoes)
         quantidade_avaliacoes = len(self._avaliacoes)
+        media = round(notas_somadas/quantidade_avaliacoes, 1)
+        return media
 
     def alterar_status(self):
         self._status = not self._status
