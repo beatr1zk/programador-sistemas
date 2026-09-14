@@ -1,5 +1,6 @@
 from models.conta_bancaria import ContaBancaria
 
+
 conta_1 = ContaBancaria("Diogo", 1000)
 conta_2 = ContaBancaria("Adrianna", 500)
 
@@ -19,7 +20,7 @@ match conta_escolhida:
         conta = None
 
 while True:
-    menu(conta)
+    ContaBancaria.menu(conta)
 
     print("\nDeseja continuar?")
     continuar = input("Selecione uma opção s/n: ")
