@@ -1,6 +1,7 @@
 # Atividade 2
 
-**Controle de Veículos**
+## Controle de Veículos
+
 
 Uma concessionária precisa controlar quais veículos ainda estão disponíveis para venda e quais já foram vendidos. Crie uma classe chamada Veiculo para representar cada automóvel cadastrado. A classe deverá possuir os atributos modelo, marca, ano e _vendido. O atributo _vendido deverá iniciar automaticamente com o valor False, indicando que o veículo está disponível.
 

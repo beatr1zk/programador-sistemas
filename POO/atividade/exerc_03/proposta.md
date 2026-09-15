@@ -1,6 +1,6 @@
 # Atividade 3
 
-**Conta Bancária**
+## Conta Bancária
 
 Desenvolva uma classe chamada ContaBancaria para representar uma conta de um cliente. Cada conta deverá possuir um atributo titular, contendo o nome do cliente, e um atributo protegido _saldo, contendo o valor disponível na conta. O saldo inicial deverá ser informado no momento em que o objeto for criado.
 
