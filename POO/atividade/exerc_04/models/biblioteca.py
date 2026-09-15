@@ -13,18 +13,19 @@ class Livro:
         return f"Título: {self.titulo} | Autor: {self.autor} | Ano: {self.ano}"
 
     @property
-    def disponivel(self):
+    def disponibilidade(self):
         return "Disponível" if self._disponivel else "Indisponível"
 
     @classmethod
     def listar_livros(cls):
         for livro in cls.livros:
-            print (f"\nTítulo: {livro.titulo} \n| Autor: {livro.autor} \n| Ano: {livro.ano} \n| Disponibilidade: {livro.disponivel}\n\n---------------------------------------------------" )
+            print (f"\nTítulo: {livro.titulo} \n| Autor: {livro.autor} \n| Ano: {livro.ano} \n| Disponibilidade: {livro.disponibilidade}\n\n---------------------------------------------------" )
 
     def emprestar(self):
-        if self._disponivel:
-            self._disponivel = False
+        self._disponivel = not self._disponivel
 
     def devolver(self):
-        if not self._disponivel:
+        if self._disponivel == False:
             self._disponivel = True
+        else:
+            return self._disponivel
