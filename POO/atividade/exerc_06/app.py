@@ -14,4 +14,4 @@ def main():
     Funcionario.listar_funcionarios()
 
 if __name__ == '__main__':
-    main()
+    main() 
