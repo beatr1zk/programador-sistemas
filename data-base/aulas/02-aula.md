@@ -6,6 +6,8 @@ python -m venv venv
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass *se der erro*
 pip install mysql-connector-python
 
+**-------------------------------------------------------------------------------------------------------------------------------------**
+
 criacao da pasta db.py para conectar o banco:
 ```python
 import mysql.connector
@@ -32,6 +34,7 @@ def tabela_restaurante():
         CREATE TABLE IF NOT EXISTS restaurantes (
             id INT AUTO_INCREMENT PRIMARY KEY,
             nome VARCHAR(255) NOT NULL,
+            categoria VARCHAR(45) NOT NULL,
             ativo BOOlEAN DEFAULT FALSE NOT NULL
         )
     """
@@ -39,6 +42,7 @@ def tabela_restaurante():
     conexao.commit()
     conexao.close()
 ```
+**-------------------------------------------------------------------------------------------------------------------------------------**
 
 para criar itens dentro de uma tabela:
 ```python
@@ -53,6 +57,8 @@ def criar_restaurante(nome, categoria):
     conexao.close()
 ```
 
+**-------------------------------------------------------------------------------------------------------------------------------------**
+
 em app.py para preencher as informacoes:
 ```python
 from db import tabela_restaurante, criar_restaurante
@@ -60,4 +66,20 @@ from db import tabela_restaurante, criar_restaurante
 tabela_restaurante()
 
 criar_restaurante("La Mafia", "Italiana")
+```
+**-------------------------------------------------------------------------------------------------------------------------------------**
+
+para listar restaurantes:
+```python
+def listar_restaurantes():
+    conexao = conectar()
+    cursor = conexao.cursor()
+    cursor.execute("""
+        SELECT * FROM restaurantes
+    """)
+    restaurantes = cursor.fetchall()
+    for restaurante in restaurantes:
+        print(restaurante)
+    conexao.commit()
+    conexao.close()
 ```
